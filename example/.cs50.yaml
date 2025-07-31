@@ -4,3 +4,9 @@ check50:
       - run: python3 hello.py
         stdout: Hello, world!
         exit: 0
+    multiline hello world:
+      - run: python3 multi_hello.py
+        stdout: | # expect Hello\nWorld!\n in stdout
+          Hello
+          World!
+        exit: 0
