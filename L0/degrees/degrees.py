@@ -75,7 +75,7 @@ def main():
   path = shortest_path(source, target)
 
   if path is None:
-    print("Not connected.")
+    print("None")
   else:
     degrees = len(path)
     print(f"{degrees} degrees of separation.")
