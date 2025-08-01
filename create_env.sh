@@ -4,7 +4,7 @@
 set -e
 
 # Define the environment name
-ENV_NAME=".env"
+ENV_NAME=".venv"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 
