@@ -56,6 +56,9 @@ def result(board, action):
     if board[action[0]][action[1]] is not EMPTY:
         raise ValueError("Invalid action", action)
 
+    if action[0] < 0 or action[0] > 2 or action[1] < 0 or action[1] > 2:
+        raise ValueError("Action out of bounds", action)
+
     new_board = copy.deepcopy(board)
     new_board[action[0]][action[1]] = player(board)
     return new_board
